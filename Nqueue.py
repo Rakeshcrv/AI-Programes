@@ -20,7 +20,7 @@ def is_safe(boared,row,col):
     for i,j in zip(range(row,N,1),range(col,-1,-1)):
         if boared[i][j]==True:
             return False
-    return True
+        return True
     
 def solve_nq_util(boared,col):
     if col>=N:
@@ -43,5 +43,6 @@ def solve_nq():
         return False
     ps(boared)
     return True
+
 if __name__=="__main__":
     solve_nq()
